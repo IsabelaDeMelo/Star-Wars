@@ -202,4 +202,32 @@ main {
         bottom: 78%;
     }
     
+    main {
+        position: absolute;
+        top: 17%;
+    }
+
+    .divRed {
+        display: none;
+        background-image: url(imgs/Grupo\ vermelho.png);
+        width: 55%;
+        position: relative;
+        left: 35%;
+        margin-top: 15%;
+    }
+
+    .sobre {
+        display: none;
+    }
+
+    .divSobre {
+        background-image: url(imgs/star\ wars\ frente\ de\ batalha.png);
+        width: 100%;
+        height: 80%;
+    }
+
+    .lord, .estrutura, .rey {
+        display: none;
+    }
+
 }
