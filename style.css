@@ -61,9 +61,8 @@ header {
 main {
     background-image: url(imgs/80749e0e-716b-48ec-8259-38e53f5a96cb.png);
     background-repeat: no-repeat;
-    background-size: contain;
-    width: 98%;
-    min-height: 150vh;
+    background-size: 50%;
+    width: 100%;   
 }
 
 .divRed {
@@ -130,15 +129,32 @@ main {
 
 /* Estrutura do jogo section */
 
-.estrutura {
+.firstMain {
     width: 100%;
-    height: 75vh;
+    height: 80vh;
+}
+
+.containerEstrutura {
+    height: 85vh;
+    display: flex;
+}
+
+.middleMain {
+    width: 100%;
+    height: 77vh;
+}
+
+.lord {
+    position: relative;
+    left: 10%;
+}
+
+.estrutura {
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     text-transform: uppercase;
-    margin-top: -43%;
-    padding-right: 28%;
     font-size: 1.6rem;
 }
 
@@ -177,60 +193,108 @@ main {
     transition: 0.5s;
 }
 
-.lord {
-    width: 45%;
-    margin-top: 36%;
-    margin-left: 12%;
-}
-
-.rey {
-    width: 22%;
-    position: absolute;
-    right: 8%;
-    bottom: -154%;
-}
-
 /* Atributos Section */
 
 .atributos {
     background-color: #2D2D2D;
-    width: 98.7vw;
-    height: 110rem;
-}
+    height: 250vh;
 
-.divAtributos {
-    width: 100%;
-    height: 43%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
 }
 
 .atributos > h2 {
     color: white;
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 800;
-    text-indent: 13rem;
-    
-    position: relative;
-    top: 8%;
+    text-indent: 15rem;
+    padding-top: 6%;
+    display: flex;
+    align-items: center;
+}
+
+.divAtributos {
+    width: 100%;
+    display: flex;
+    padding-left: 9%;
+}
+
+.imgsAtributos1, .imgsAtributos2, .imgsAtributos3, .imgsAtributos4  {
+    width: 41%;
+}
+
+.divHoover0 {
+    background-color:  #60359c91;
+    color: white;
+    width: 35%;
+    height: 50vh;
+    position: absolute;
+    left: 11%;
+    margin-top: 5%;
+    transition: transform 1.5s;
+    opacity: 0;
+}
+
+.divHoover0:hover {
+    opacity: 1;
+    transform: translateX(10px) scale(1.3);
+    transition: 1.5s;
+    position: absolute;
+} 
+
+.divHoover1 {
+    background-color:  #b73d30a1;
+    color: white;
+    width: 20%;
+    height: 26vh;
+    position: absolute;
+    transition: transform 1.5s;
+    opacity: 0;
+}
+
+.divHoover1:hover {
+    opacity: 1;
+    transform: translateX(10px) scale(1.3);
+    transition: 1.5s;
+} 
+
+.divHoover2 {
+    background-color:  #cb9446b0;
+    color: white;
+    width: 20%;
+    height: 26vh;
+    position: absolute;
+    transition: transform 1.5s;
+    opacity: 0;
+}
+
+/* #0A1EB1 
+#62D025*/
+
+.divHoover2:hover {
+    opacity: 1;
+    transform: translateX(10px) scale(1.3);
+    transition: 1.5s;
+} 
+
+.divImgsAtributos {
+    margin: auto;
 }
 
 .imgBattle {
-    width: 41.3%;
-    margin-left: 8%;
-    margin-right: 3px;
-}
-
-.imgsAtributos {
-    width: 40.5%;
-    margin: -3px;
+    height: 75.5%;
+    margin: auto;
 }
 
 .hierarquia {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.imgHierarquia {
+    width: 83%;
 }
 
 .hierarquia > p {
@@ -247,99 +311,175 @@ main {
     margin-top: 1%;
 }
 
-.imgHierarquia {
-    width: 84%;
-    margin-top: -10%;
-    padding-right: 2%;
-}
-
-.como > h2 {
-    color: white;
-    text-transform: uppercase;
-    font-weight: 800;
-    font-size: 2.5rem;
-
-    display: flex;
-    justify-content: center;
-   
-    margin-top: 8%;
-}
-
-.como > img {
-    width: 28%;
-    height: 40%;
-    margin-top: -10%;
-    margin-left: 7%;
-}
+/* Como jogar container */
 
 .containerComo {
     display: flex;
-    padding-left: 35%;
-    height: 30vh;
-    margin-top: -20%;
 }
 
-.divsComo {
-    width: 27%;
-    height: 30vh;
+.divComo {
+    background-image: url(imgs/stortm_trooper_capa_preta-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    width: 100%;
+    height: 105vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-around;
 }
 
-.divsComo > span {
-    font-size: 2rem;
+.divComo > h2 {
+    color: white;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
 }
 
-.divsComo > p {
-    font-size: 0.9rem;
-    text-align: center;
-}
-
-#pBtn1 {
+.divBtns {
+    display: flex;
+    justify-content: center;
     width: 60%;
+    margin-bottom: 8%;
+    margin-left: 30%;  
 }
 
-.pBtn2, .pBtn3 {
-    margin-bottom: 7%;
+.btns {
+    width: 50%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20%;
 }
 
-.divsComo > button {
+.btns > button {
     color: white;
     background-color: black;
     width: 70%;
-    height: 3rem;
+    height: 20%;
     text-transform: uppercase;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 200;
 }
 
-.divsComo > button:hover {
+.btns > button:hover {
     background-color: #D74430;
     border: none;
     cursor: pointer;
     transition: 1s;
 }
 
-.linha2 {
-    width: 30%;
-    background-color: black;
-    height: 2%;
+.numeros {
+    font-size: 2.4rem;
 }
+
+.linha2 {
+    width: 25%;
+    height: 2%;
+    background-color: black;
+}
+
 
 /* Footer */
 
 footer {
-    width: 70%;
-    height: 80vh;
-    background-color: #FF5A56;
-    
+    width: 100%;
+    margin-top: 30%;
+    display: flex;
 }
 
+footer > section {
+    background-color: #FF5A56;
+    width: 85%;
+    height: 100vh;
+}
 
+.darth {
+    width: 100%;
+    position: relative;
+    right: 35%;
+    bottom: 8%;
+} 
 
+.divDarth {
+    height: 90vh;
+} 
 
+.referencia {
+    width: 50%;
+    font-size: 0.7rem;
+    position: relative;
+    left: 6%;
+    bottom: 15%;
+}
+
+.containerFooter {
+    padding-top: 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aplicativo {
+    color: white;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.aplicativo > h2 {
+    width: 42%;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+
+.aplicativo > p {
+    font-size: 0.9rem;
+    width: 42%;
+}
+
+.apps {
+    display: flex;
+    gap: 1rem;
+    margin-left: 13%;
+}
+
+.googleP, .appStore {
+    width: 35%;
+}
+
+.linhaFooter {
+    width: 42%;
+    height: 0.6vh;
+    margin: 2%;
+    background-color: #D74430;
+}
+
+.swName {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.swName > img {
+    width: 20%;
+    margin-right: 21%;
+}
+
+.swName > p {
+    color: white;
+    font-size: 0.9rem;
+    width: 42%;
+}
 
 /* Responsive */
 
