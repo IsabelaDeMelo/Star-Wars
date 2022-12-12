@@ -224,66 +224,176 @@ main {
     width: 41%;
 }
 
-.divHoover0 {
+.imgBattle {
+    height: 75.5%;
+    margin: auto;
+}
+
+/* Balões de animações */
+
+.animaçao0 {
     background-color:  #60359c91;
     color: white;
     width: 35%;
     height: 50vh;
+    padding: 1.5rem;
     position: absolute;
     left: 11%;
     margin-top: 5%;
     transition: transform 1.5s;
     opacity: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.divHoover0:hover {
+.animaçao0 > p {
+    width: 40%;
+}
+
+.animaçao0 > h2 {
+    text-transform: uppercase;
+    width: 30%;
+}
+
+.animaçao0 > button {
+    width: 40%;
+    color: white;
+    background-color: transparent;
+    border: 3px solid white;
+    padding: 5px;
+    transition: transform 1.5s;
+}
+
+.animaçao0:hover {
     opacity: 1;
     transform: translateX(10px) scale(1.3);
     transition: 1.5s;
     position: absolute;
 } 
 
-.divHoover1 {
+.animaçao1 {
     background-color:  #b73d30a1;
     color: white;
     width: 20%;
-    height: 26vh;
+    height: 35vh;
+    padding: 1.5rem;
     position: absolute;
     transition: transform 1.5s;
     opacity: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-.divHoover1:hover {
+.animaçao1 > h2 {
+    text-transform: uppercase;
+}
+
+.animaçao1:hover {
     opacity: 1;
     transform: translateX(10px) scale(1.3);
     transition: 1.5s;
 } 
 
-.divHoover2 {
+.animaçao2 {
     background-color:  #cb9446b0;
     color: white;
     width: 20%;
-    height: 26vh;
+    height: 35vh;
+    padding: 1.5rem;
     position: absolute;
     transition: transform 1.5s;
     opacity: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-/* #0A1EB1 
-#62D025*/
+.animaçao2 > h2 {
+    text-transform: uppercase;
+}
 
-.divHoover2:hover {
+.animaçao2:hover {
     opacity: 1;
     transform: translateX(10px) scale(1.3);
     transition: 1.5s;
 } 
 
-.divImgsAtributos {
-    margin: auto;
+.animaçao3 {
+    background-color: #0a1db19f;
+    color: white;
+    width: 20%;
+    height: 35vh; 
+    padding: 1.5rem;
+    position: absolute;
+    right: 10%;
+    transition: transform 1.5s;
+    opacity: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-.imgBattle {
-    height: 75.5%;
+.animaçao3 > h2 {
+    text-transform: uppercase;
+}
+
+.animaçao3:hover {
+    opacity: 1;
+    transform: translateX(10px) scale(1.3);
+    transition: 1.5s;
+} 
+
+.animaçao4 {
+    background-color: #61d025a2;
+    color: white;
+    width: 20%;
+    height: 35vh;
+    /* border: 5px solid white;
+    border-left: 0.4rem dashed; */
+    padding: 1.5rem;
+
+    position: absolute;
+    right: 8.5%;
+    margin-top: -55vh;
+    transition: transform 1.5s;
+    opacity: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.animaçao4 > h2 {
+    text-transform: uppercase;
+}
+
+.animaçao4:hover {
+    opacity: 1;
+    transform: translateX(10px) scale(1.3);
+    transition: 1.5s;
+} 
+
+.animaçao0 > button, .animaçao1 > button, .animaçao2 > button, .animaçao3 > button, .animaçao4 > button {
+    width: 40%;
+    color: white;
+    background-color: transparent;
+    border: 3px solid white;
+    padding: 5px;
+    transition: transform 1s;
+}
+
+.animaçao0 > button:hover, .animaçao1 > button:hover, .animaçao2 > button:hover, .animaçao3 > button:hover, .animaçao4 > button:hover{
+    transform: translateX(10px) scale(1.3);
+}
+
+.divImgsAtributos {
     margin: auto;
 }
 
@@ -490,12 +600,6 @@ footer > section {
         width: 100%;
         height: 60vh;
         background-repeat: no-repeat;
-        position: relative;
-    }
-
-    .movieName {
-        position: absolute;
-        top: -15vh;
     }
 
     .aside {
@@ -504,13 +608,13 @@ footer > section {
 
     .asideDiv {
         position: absolute;
-        bottom: 40%;
-    }
+        bottom: 50%;
+    } 
     
     main {
         position: absolute;
-        top: 30%;
-        height: 85%;
+        top: 23%;
+        height: 90vh;
     }
 
     .divRed {
@@ -555,7 +659,47 @@ footer > section {
         margin-top: 4%;
     }
 
-    .lord, .estrutura, .rey {
+    .lord {
+        height: 25vh;
+        position: relative;
+        left: 3vw;
+    }
+
+    .rey {
+        width: 30%;
+        height: 28vh;
+
+        border: 1px solid red;
+    }
+
+    /* COLOCAR !!!!!!!!!!!!!!!!!! LINHA */
+
+    .middleMain {
+        margin-top: 6vh;
+    }
+
+    .estrutura > h2 {
+        font-size: 1rem;
+        height: 3vh;
+    }
+
+    .estrutura > ul {
+        width: 100vw;
+        font-size: 0.6rem;
+        font-weight: 600;
+        margin-top: 20%;
+        z-index: 1;
+    }
+
+    .estrutura > ul > li {
+        margin-bottom: -2.1rem;
+    }
+
+    .containerEstrutura {
+        width: 100vw;
+    }
+
+    footer {
         display: none;
     }
 
