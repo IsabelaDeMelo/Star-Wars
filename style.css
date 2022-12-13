@@ -89,12 +89,13 @@ main {
     text-transform: uppercase;
     font-size: 2.4rem;
     font-weight: 500;
-    width: 60%;
+    width: 70%;
 }
 
 .divRed > p {
     font-weight: 100;
-    color: rgba(255, 255, 255, 0.788);}
+    color: rgba(255, 255, 255, 0.788);
+}
 
 .divRed > input {
     width: 55%;
@@ -152,7 +153,7 @@ main {
 }
 
 .estrutura {
-    width: 30%;
+    width: 33%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -223,11 +224,11 @@ main {
 }
 
 .imgsAtributos1, .imgsAtributos2, .imgsAtributos3, .imgsAtributos4  {
-    width: 41%;
+    width: 40%;
 }
 
 .imgBattle {
-    height: 75.5%;
+    height: 67%;
     margin: auto;
 }
 
@@ -239,9 +240,10 @@ main {
     width: 35%;
     height: 50vh;
     padding: 1.5rem;
+    font-size: 0.8rem;
     position: absolute;
     left: 11%;
-    margin-top: 5%;
+    margin-top: 6%;
     transition: transform 1.5s;
     opacity: 0;
 
@@ -280,8 +282,9 @@ main {
     background-color:  #b73d30a1;
     color: white;
     width: 20%;
-    height: 35vh;
-    padding: 1.5rem;
+    height: 30vh;
+    font-size: 0.7rem;
+    padding: 1rem;
     position: absolute;
     transition: transform 1.5s;
     opacity: 0;
@@ -292,6 +295,7 @@ main {
 }
 
 .animaçao1 > h2 {
+    width: 20%;
     text-transform: uppercase;
 }
 
@@ -305,8 +309,9 @@ main {
     background-color:  #cb9446b0;
     color: white;
     width: 20%;
-    height: 35vh;
-    padding: 1.5rem;
+    height: 30vh;
+    font-size: 0.7rem;
+    padding: 1rem;
     position: absolute;
     transition: transform 1.5s;
     opacity: 0;
@@ -317,6 +322,7 @@ main {
 }
 
 .animaçao2 > h2 {
+    width: 70%;
     text-transform: uppercase;
 }
 
@@ -330,8 +336,9 @@ main {
     background-color: #0a1db19f;
     color: white;
     width: 20%;
-    height: 35vh; 
-    padding: 1.5rem;
+    height: 30vh;
+    font-size: 0.7rem;
+    padding: 1rem;
     position: absolute;
     right: 10%;
     transition: transform 1.5s;
@@ -343,6 +350,7 @@ main {
 }
 
 .animaçao3 > h2 {
+    width: 50%;
     text-transform: uppercase;
 }
 
@@ -356,10 +364,11 @@ main {
     background-color: #61d025a2;
     color: white;
     width: 20%;
-    height: 35vh;
+    height: 30vh;
+    font-size: 0.7rem;
     /* border: 5px solid white;
     border-left: 0.4rem dashed; */
-    padding: 1.5rem;
+    padding: 1rem;
 
     position: absolute;
     right: 8.5%;
@@ -373,6 +382,7 @@ main {
 }
 
 .animaçao4 > h2 {
+    width: 20%;
     text-transform: uppercase;
 }
 
@@ -495,7 +505,6 @@ main {
     background-color: black;
 }
 
-
 /* Footer */
 
 footer {
@@ -520,14 +529,6 @@ footer > section {
 .divDarth {
     height: 90vh;
 } 
-
-.referencia {
-    width: 50%;
-    font-size: 0.7rem;
-    position: relative;
-    left: 6%;
-    bottom: 15%;
-}
 
 .containerFooter {
     padding-top: 6%;
@@ -560,7 +561,7 @@ footer > section {
 .apps {
     display: flex;
     gap: 1rem;
-    margin-left: 13%;
+    margin-left: 24%;
 }
 
 .googleP, .appStore {
@@ -593,6 +594,14 @@ footer > section {
     width: 42%;
 }
 
+.referencia {
+    width: 50%;
+    font-size: 0.7rem;
+    position: relative;
+    left: 6%;
+    bottom: 15%;
+}
+
 /* Responsive */
 
 @media (min-width: 360px) and (max-width: 500px) {
@@ -615,7 +624,7 @@ footer > section {
 
     .asideDiv {
         position: absolute;
-        bottom: 55%;
+        bottom: 52%;
     } 
     
     main {
@@ -667,23 +676,30 @@ footer > section {
     }
 
     .lord {
-        height: 25vh;
+        height: 30vh;
         position: relative;
-        left: 3vw;
+        left: 1vw;
+        top: 10vh;
     }
 
     .rey {
-        width: 30%;
-        height: 28vh;
+        height: 30vh;
         position: relative;
         right: 3%;
+        top: 12vh;
     }
 
-    /* COLOCAR !!!!!!!!!!!!!!!!!! LINHA */
+    .linha1 {
+        position: relative;
+        bottom: 67vh;
+    }
 
     .middleMain {
-        margin-top: 6vh;
-        border: 1px solid red;
+        margin-top: 22vh;
+    }
+
+    .estrutura {
+        width: 25%;
     }
 
     .estrutura > h2 {
@@ -697,12 +713,10 @@ footer > section {
         font-weight: 600;
         margin-top: 20%;
         z-index: 1;
-
-        border: 1px solid red;
     }
 
     .estrutura > ul > li {
-        margin-bottom: -2.1rem;
+        margin-bottom: -1.5rem;
     }
 
     .animaçao0, .animaçao1, .animaçao2, .animaçao3, .animaçao4 {
@@ -713,6 +727,17 @@ footer > section {
         display: flex;
         flex-direction: column;
     }
+
+    .atributos {
+        margin-top: -40vh;
+        padding-right: 7%;
+        height: 192vh;
+    }
+
+    .atributos > h2 {
+        font-size: 1.2rem;
+        text-indent: 35vw;
+    }
     
     .divImgsAtributos {
         display: flex;
@@ -722,16 +747,6 @@ footer > section {
 
     .imgsAtributos1, .imgsAtributos2, .imgsAtributos3, .imgsAtributos4 {
         width: 90%;
-    }
-
-    .atributos {
-        padding-right: 7%;
-        height: 192vh;
-    }
-
-    .atributos > h2 {
-        font-size: 1.2rem;
-        text-indent: 35vw;
     }
     
     .imgBattle {
@@ -802,7 +817,66 @@ footer > section {
     }
 
     footer {
-        display: none;
+        margin-top: 143rem;
+        display: flex;
+        flex-direction: column;
     }
 
+    footer > section {
+        width: 100%;
+        height: 120vh;
+    }
+
+    .aplicativo > p {
+        font-size: 0.7rem;
+        margin: auto;
+        width: 70%;
+    }
+
+    .aplicativo > h2 {
+        font-size: 3rem;
+        margin-right: 7rem;
+    }
+
+    .swName > p {
+        font-size: 0.7rem;
+        margin: auto;
+        width: 70%;   
+    }
+
+    .swName > img {
+        width: 40%;
+        margin: auto;
+    }
+
+    .googleP, .appStore {
+        width: 40%;
+    }
+
+    .apps {
+        margin: auto;
+        padding-left: 3.2rem; 
+    }
+
+    .linhaFooter {
+        width: 80%;
+    }
+
+    .divDarth {
+        height: 40vh;
+    }
+
+    .darth {
+        width: 80%;
+        position: relative;
+        left: 10vh;
+        bottom: 30vh;
+    }
+
+    .referencia {
+        font-size: 0.6rem;
+        position: relative;
+        bottom: 28vh;
+        width: 100%;
+    }
 }
